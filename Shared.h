@@ -39,21 +39,6 @@ class SharedPTR {
         control_block = nullptr;
     }; // Release ownership of any stored pointer.
 
-    // void decrement_shared(){
-    //     if (control_block){
-    //         if (--shared_count() == 0){
-    //             del()(ptr());
-    //             ptr() = nullptr;
-    //
-    //             if (weak_count() == 0){
-    //                 delete control_block;
-    //                 control_block = nullptr;
-    //             }
-    //         }
-    //     }
-    //
-    // }
-
 public: // Constructors and destructor.
     SharedPTR(): control_block(nullptr){};
 
